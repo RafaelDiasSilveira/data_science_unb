@@ -1,3 +1,4 @@
+library(stats)
 library(jsonlite)
 library("dplyr")
 library(stringr)
@@ -23,8 +24,14 @@ pessoa_dt <- data_frame(id, data2[[1]], data2[[2]], data2[[7]])
 colnames(pessoa_dt) <- c('id', 'nome', 'resumo_cv', 'senioridade')
 glimpse(pessoa_dt)
 
-# do.call('rbind', lista_pessoa) lista_pessoa 2 3 4 5 6 7
+# 2 - Criação do dataframe Area_atuacao
+area_atuacao_dt <- data.frame(id, data2[3], stringsAsFactors = FALSE)
+glimpse(area_atuacao)
 
+
+
+
+# do.call('rbind', lista_pessoa) lista_pessoa 2 3 4 5 6 7
 # data2 <- unlist(data, recursive = FALSE, use.names = FALSE)
 
 # Transforma uma lista de dataframes em um único dataframe 

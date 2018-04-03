@@ -16,12 +16,27 @@ Ao utilizar a função ```fromJSON()``` do pacote ``` jsonlite ```, é obitida u
 | orientacoes_academicas | list          |   6   |
 | senioridade            | chr           |   7   |
 
-O nome da lista é uma string única de 16 caracteres numéricos. Não se sabe qual informação dentro do contexto esse nome representa. Essa string será utilizada como id única para conectar as informações entre os dataframes criados.
+O nome da lista é uma string única de 16 caracteres numéricos. Não se sabe qual informação dentro do contexto esse nome representa. Essa string será utilizada como **id** única para conectar as informações entre os dataframes criados.
 
-Ao final do tratamento, serão gerados X dataframes:
+Ao final do tratamento, serão gerados 5 dataframes:
 
 + Pessoa
 + Area_atuacao
 + Endereco_profissional
 + Producao_bibliografica
 + Orientacao_academica
+
+### Dataframe Pessoa
+
+| Campo                  |      Tipo     |
+|------------------------|:-------------:|
+| id                     | chr           |
+| nome                   | chr           |
+| resumo_cv              | chr           |
+| senioridade            | chr           |
+
+### Dataframe Area_atuacao
+### Dataframe Endereco_profissional
+### Dataframe Producao_bibliografica
+### Dataframe Orientacao_academica
+

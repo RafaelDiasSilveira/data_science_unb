@@ -18,6 +18,36 @@ Ao utilizar a função ```fromJSON()``` do pacote ``` jsonlite ```, é obitida u
 
 O nome da lista é uma string única de 16 caracteres numéricos. Não se sabe qual informação dentro do contexto esse nome representa. Essa string será utilizada como **id** única para conectar as informações entre os dataframes criados.
 
+### Campos list
+Os campos "endereco\_profissional", "producao\_bibliografica", "orientacoes\_academicas" são listas encadeadas compostas por:  
+
+#### endereco\_profissional
+Lista com os seguintes campos:
+
+| Campo       |  Tipo  | Index |
+|-------------|:------:|:-----:|
+| instituicao | chr    |   1   |
+| orgao       | chr    |   2   |
+| unidade     | chr    |   3   |
+| DDD         | chr    |   4   |
+| telefone    | chr    |   5   |
+| bairro      | chr    |   6   |
+| cep         | chr    |   7   |
+| cidade      | chr    |   8   |
+
+#### producao_bibliografica
+Uma lista de "data.frame" nomeados. Os nomes dos dataframes são relacionados ao tipo de produção realizada. Ex.: "PERIODICO", "CAPITULO\_DE\_LIVRO"
+
+Após uma breve análise, percebe-se que será necessário criar um data.frame para cada tipo de produção, pois os campos em "PERIODICO" e "CAPITULO\_DE\_LIVRO", por exemplo, são distintos.
+
+#### orientacoes_academicas
+
+#### senioridade
+
+
+
+
+
 Ao final do tratamento, serão gerados 5 dataframes:
 
 + Pessoa

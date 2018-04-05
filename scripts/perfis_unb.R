@@ -13,7 +13,7 @@ any(id_size != 16)
 # Garante que todos os supostos id's são únicos
 any(duplicated(names(unb_perfis_raw)))
 
-unb_perfis_raw <- unname(unb_perfis_raw)
+# unb_perfis_raw <- unname(unb_perfis_raw)
 
 # Conjunto para teste
 size <- length(unb_perfis_raw)

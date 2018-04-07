@@ -1,7 +1,5 @@
 library(jsonlite)
 library("dplyr")
-library(stringr)
-library(rlist)
 
 # Importação do arquivo JSON
 prod_bibli_json <- "./files/unb.relatorioProducaoBibiografica.json"

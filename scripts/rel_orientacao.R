@@ -1,7 +1,5 @@
 library(jsonlite)
 library("dplyr")
-library(stringr)
-library(rlist)
 
 # Importação do arquivo JSON
 rel_orientacao_json <- "./files/unb.relatorioOrientacao.json"
@@ -29,5 +27,5 @@ df_final$instituicao <- as.factor(df_final$instituicao)
 df_final$curso       <- as.factor(df_final$curso)
 df_final$bolsa       <- as.factor(df_final$bolsa)
 
-glimpse(df_final)
+str(df_final, max.level = 1, ven.len = 0)
 # summary(df_final$ano)

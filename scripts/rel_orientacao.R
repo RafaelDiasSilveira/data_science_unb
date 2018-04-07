@@ -6,7 +6,7 @@ rel_orientacao_json <- "./files/unb.relatorioOrientacao.json"
 rel_orientacao_raw <- fromJSON(rel_orientacao_json)
 
 tipo_orientacao <- as.factor(names(rel_orientacao_raw))
-
+tipo_orientacao
 df_final <- data.frame()
 i <- 1
 
@@ -26,6 +26,9 @@ df_final$ano         <- as.factor(df_final$ano)
 df_final$instituicao <- as.factor(df_final$instituicao)
 df_final$curso       <- as.factor(df_final$curso)
 df_final$bolsa       <- as.factor(df_final$bolsa)
+df_final$tipo_orientacao.i. <- as.factor(df_final$tipo_orientacao.i.)
 
 str(df_final, max.level = 1, ven.len = 0)
-# summary(df_final$ano)
+
+summary(df_final$ano)
+summary(df_final$natureza)

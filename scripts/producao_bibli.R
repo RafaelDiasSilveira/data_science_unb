@@ -8,6 +8,7 @@ prod_bibli_raw <- fromJSON(prod_bibli_json)
 # Verifica a estrutura do arquivo
 str(prod_bibli_raw, vec.len	= 0, max.level = 3)
 
+names(prod_bibli_raw)
 
 # Criação dos dataframes
 temp <- prod_bibli_raw$PERIODICO
@@ -24,3 +25,6 @@ texto_jornal_df <- do.call("rbind", temp)
 
 temp <- prod_bibli_raw$ARTIGO_ACEITO
 artigo_df <- do.call("rbind", temp)
+
+periodico_df$ano <- as.factor(periodico_df$ano)
+summary(periodico_df$ano)

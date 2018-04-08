@@ -31,4 +31,4 @@ df_final$tipo_orientacao.i. <- as.factor(df_final$tipo_orientacao.i.)
 str(df_final, max.level = 1, ven.len = 0)
 
 summary(df_final$ano)
-summary(df_final$natureza)
+summary(df_final$tipo_orientacao.i.)
